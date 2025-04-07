@@ -19,11 +19,15 @@ console.log(objeto2.nombre + " " + objeto2.dni);*/
 ej4.copiar("./archivo.txt", "./hola.txt");*/
 
 const ej5 = require('./src/modules/parsearURL.js');
-let objeto = ej5.parsearUrl('https://s.sjk');
+/*let objeto = ej5.stringIsAValidUrl('https://s.sjk');
 for (const element in objeto){
     console.log(element + " " + objeto[element]);
-}
+}*/
 
-/*
+const urlEjemplo = 'sasa';
+const objeto = ej5.parsearURL(urlEjemplo);
+console.log(objeto);
+
+/*u
 const ej7 = require('./src/modules/retornarmoneda.js');
 console.log(ej7.retornarMoneda('Argentina'));*/
