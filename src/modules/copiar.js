@@ -1,4 +1,8 @@
-const copiar = (nombre, nombreNuevo) =>{
-FileSystem.rename(nombre, nombreNuevo);
+const fs = require('fs');
+const copiar = (archivo, nombreNuevo) =>{
+fs.rename(archivo, nombreNuevo, (err)=>{
+    if (err) throw err;
+    console.log("Renombrado");
+});
 }
-module.exports = {Alumno}
+module.exports = {copiar}

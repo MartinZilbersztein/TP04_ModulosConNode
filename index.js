@@ -15,5 +15,15 @@ console.log(objeto1.nombre + " " + objeto1.dni);
 const objeto2 = new ej3.Alumno("Pepe", 878668);
 console.log(objeto2.nombre + " " + objeto2.dni);*/
 
+/*const ej4 = require('./src/modules/copiar.js');
+ej4.copiar("./archivo.txt", "./hola.txt");*/
 
+const ej5 = require('./src/modules/parsearURL.js');
+let objeto = ej5.parsearUrl('https://s.sjk');
+for (const element in objeto){
+    console.log(element + " " + objeto[element]);
+}
 
+/*
+const ej7 = require('./src/modules/retornarmoneda.js');
+console.log(ej7.retornarMoneda('Argentina'));*/
